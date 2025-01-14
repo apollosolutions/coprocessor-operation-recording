@@ -86,7 +86,7 @@ impl Reporter {
 
         let file = OpenOptions::new()
             .read(true)
-            .write(true)
+            
             .create(true)
             .append(true)
             .open(current_file.clone())?;
@@ -101,7 +101,7 @@ impl Reporter {
 
             // Check for headers, and if they don't exist, write them
             if rdr.headers()?.is_empty() {
-                wtr.write_record(&["id", "timestamp", "operation_name", "client_name", "client_version", "status_code"])?;
+                wtr.write_record(["id", "timestamp", "operation_name", "client_name", "client_version", "status_code"])?;
             }
         }
 

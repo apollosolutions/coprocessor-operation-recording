@@ -38,7 +38,7 @@ async fn main() {
     // Parse the configuration file and load it if needed
     let mut user_config = parse_config(args.config_path.as_str());
 
-    if user_config.interval <= 0 {
+    if user_config.interval == 0 {
         warn!("Interval is set to 0 or less; defaulting to 5 seconds");
         user_config.interval = 5;
     }
@@ -79,7 +79,7 @@ async fn start_server(reporter: Reporter, config: Config, debug: bool) {
     if debug {
         app = app.layer(middleware::from_fn(print_request_response));
     }
-    
+
     let listener = tokio::net::TcpListener::bind(config.listen)
         .await
         .unwrap();
