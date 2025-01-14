@@ -1,7 +1,7 @@
 # This is a Knope configuration file for releases
 
 # !!!! IMPORTANT !!!!!
-# Please replace all CHANGE-ME with the actual values before cutting your initial release
+# Please replace all coprocessor-operation-recording with the actual values before cutting your initial release
 
 [package]
 versioned_files = ["Cargo.toml"]
@@ -22,13 +22,13 @@ extra_changelog_sections = [
 ]
 
 [[package.assets]]
-path = "artifacts/CHANGE-ME-aarch64-apple-darwin.tgz"
+path = "artifacts/coprocessor-operation-recording-aarch64-apple-darwin.tgz"
 
 [[package.assets]]
-path = "artifacts/CHANGE-ME-x86_64-unknown-linux-gnu.tgz"
+path = "artifacts/coprocessor-operation-recording-x86_64-unknown-linux-gnu.tgz"
 
 [[package.assets]]
-path = "artifacts/CHANGE-ME-x86_64-pc-windows-msvc.tgz"
+path = "artifacts/coprocessor-operation-recording-x86_64-pc-windows-msvc.tgz"
 
 [[workflows]]
 name = "prepare-release"
@@ -63,4 +63,4 @@ type = "CreateChangeFile"
 
 [github]
 owner = "apollosolutions"
-repo = "CHANGE-ME"
+repo = "coprocessor-operation-recording"

@@ -32,3 +32,5 @@ ehthumbs.db
 
 # Repo-specific
 config.yaml
+*.csv
+!example_report.csv
