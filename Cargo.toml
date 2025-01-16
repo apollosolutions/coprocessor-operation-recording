@@ -1,26 +1,24 @@
 [package]
-name = "CHANGE-ME"
+name = "coprocessor-operation-recording"
 version = "0.0.1"
 edition = "2021"
-repository = "https://github.com/apollosolutions/CHANGE-ME"
+repository = "https://github.com/apollosolutions/coprocessor-operation-recording"
 description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
 [dependencies]
 axum = { version = "0.7.5" }
 axum-extra = { version = "0.9.3", features = ["query"] }
 axum-macros = "0.4.1"
+chrono = "0.4.39"
 clap = { version = "4.5.16", features = ["derive"] }
+csv = "1.3.1"
 http = "1.1.0"
-reqwest = { version = "0.12.7", features = [
-    "json",
-    "gzip",
-    "stream",
-    "brotli",
-] }
+http-body-util = "0.1.2"
 schemars = { version = "0.8.16", features = ["url"] }
 serde = { version = "1.0.209", features = ["derive"] }
 serde_json = { version = "1.0.127", features = ["raw_value"] }
 serde_yaml = "0.9.34"
+strum_macros = "0.26.4"
 tokio = { version = "1.39.2", features = ["rt-multi-thread"] }
 tracing = "0.1.40"
 tracing-subscriber = "0.3.18"

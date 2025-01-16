@@ -1,2 +1,4 @@
 # yaml-language-server: $schema=.vscode/configuration_schema.json
-# Placeholder text for the config file
+listen: 0.0.0.0:3030
+interval: 15
+batch_size: 0
