@@ -1,0 +1,6 @@
+name: coprocessor-operation-recording
+description: An example coprocessor written in [Rust](https://www.rust-lang.org/) that records operations coming into the Apollo Router and records them into a local CSV. This example could be modified to write to another service, such as Snowflake, for API usage analytics.
+tags:
+  - Example
+  - Coprocessor
+  - Router

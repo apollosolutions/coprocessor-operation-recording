@@ -54,6 +54,15 @@ coprocessor:
       status_code: true
 ```
 
+By default, the CSV contains: 
+
+* Unique request ID
+* Timestamp of the operation, in UTC following the RFC3339 format
+* Operation name, if available
+* Client name and version
+* Resulting status code
+
+This code could be modified to include other information, including custom information (e.g. a value from a header/another context value) or cost data. 
 
 ## Known Limitations
 
